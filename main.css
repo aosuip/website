@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Chadwick';
+    font-style: normal;
+    font-weight: 300;
+    src: url('chadwick-light.ttf');
+}
+@font-face {
+    font-family: 'Chadwick';
+    font-style: normal;
+    font-weight: 400;
+    src: url('chadwick-regular.ttf');
+}
+@font-face {
+    font-family: 'Chadwick';
+    font-style: normal;
+    font-weight: 500;
+    src: url('chadiwck-medium.ttf');
+}
+body {
+    background-color: #ffffff;
+    font-family: Chadwick;
+    color:#222222;
+    letter-spacing: -1px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#logo {
+    height:30px;
+    margin-left:-360px;
+    margin-top:40px;
+    user-select: none;
+}
+#block h1 {
+    font-weight: 500;
+    font-size: 3em;
+    margin-left: 40px;
+    letter-spacing: -2px;
+    user-select: none;
+}
+#block h1 span {
+    color: #ffffff91;
+}
+.btn {
+    color: #e83f1a;
+    background-color: #ffffff;
+    padding:15px 30px 15px 30px;
+    display:inline-block;
+    border-radius:5px;
+    transition:0.3s;
+    user-select: none;
+}
+.btn:hover {
+    color: #ffffff;
+    background-color: #ffffff48;
+}
+#block .btn {
+    margin-left:40px;
+}
+#block {
+    transform: translateY(60%);
+}
+#designs {
+    margin-left: 40px;
+    margin-top:20px;
+}
+#top {
+    height: 100vh;
+    width:100%;
+    color: #ffffff;
+    background-color: #e83f1a;
+    margin: -15px -15px -15px -15px;
+}
+#project {
+    color: #ffffff;
+    background-color: #e83f1a;
+    width:100%;
+    margin: -15px -15px -15px -15px;
+    margin-bottom:-30px;
+    padding-left:40px;
+    padding-top:20px;
+    padding-bottom:60px;
+}
+#bottom {
+    color: #e83f1a;
+    background-color: #ffffff;
+    margin: -15px -15px -15px -15px;
+    margin-bottom:-30px;
+    padding-left:40px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+path {
+    fill: #ffffff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left:-22px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 20px;
+  }
+  
+  .column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #0000002c;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
